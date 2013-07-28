@@ -92,20 +92,6 @@ typedef enum {
         default:
             break;
     }
-    
-//    for (UITouch *touch in touches) {
-//        CGPoint location = [touch locationInNode:self];
-//        
-//        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"duck1"];
-//        
-//        sprite.position = location;
-//        
-//        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-//        
-//        [sprite runAction:[SKAction repeatActionForever:action]];
-//        
-//        [self addChild:sprite];
-//    }
 }
 
 -(void)update:(CFTimeInterval)currentTime {
@@ -122,7 +108,7 @@ typedef enum {
             }
             [self.game.ducks removeAllObjects];
             self.startLabel.hidden = NO;
-            self.scoreLabel.fontColor = [UIColor redColor];
+            self.scoreLabel.fontColor = [SKColor redColor];
             self.state = begin;
         }
     }
@@ -140,7 +126,7 @@ typedef enum {
         self.game.gameTimer = [NSTimer timerWithTimeInterval:1 / 60.0 target:self selector:@selector(updateGame:) userInfo:nil repeats:YES];
         [[NSRunLoop mainRunLoop] addTimer:self.game.gameTimer forMode:NSDefaultRunLoopMode];
 
-        self.scoreLabel.fontColor = [UIColor whiteColor];
+        self.scoreLabel.fontColor = [SKColor whiteColor];
         self.scoreLabel.text = @"Score: 0";
         [self.game reset];
     }
