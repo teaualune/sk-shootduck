@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6C1D4C617FE788200FA02EF /* duck1.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C1D4C417FE788200FA02EF /* duck1.png */; };
+		E6C1D4C717FE788200FA02EF /* duck2.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C1D4C517FE788200FA02EF /* duck2.png */; };
 		E6DFF6F217A4B51D0056F270 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DFF6F117A4B51D0056F270 /* Foundation.framework */; };
 		E6DFF6F417A4B51D0056F270 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DFF6F317A4B51D0056F270 /* CoreGraphics.framework */; };
 		E6DFF6F617A4B51D0056F270 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DFF6F517A4B51D0056F270 /* UIKit.framework */; };
@@ -17,16 +19,15 @@
 		E6DFF70717A4B51D0056F270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6DFF70517A4B51D0056F270 /* Main.storyboard */; };
 		E6DFF70A17A4B51D0056F270 /* SDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DFF70917A4B51D0056F270 /* SDViewController.m */; };
 		E6DFF70D17A4B51D0056F270 /* SDMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DFF70C17A4B51D0056F270 /* SDMyScene.m */; };
-		E6DFF70F17A4B51D0056F270 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = E6DFF70E17A4B51D0056F270 /* Spaceship.png */; };
 		E6DFF71117A4B51D0056F270 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6DFF71017A4B51D0056F270 /* Images.xcassets */; };
 		E6DFF71817A4B51D0056F270 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DFF71717A4B51D0056F270 /* XCTest.framework */; };
 		E6DFF71917A4B51D0056F270 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DFF6F117A4B51D0056F270 /* Foundation.framework */; };
 		E6DFF71A17A4B51D0056F270 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DFF6F517A4B51D0056F270 /* UIKit.framework */; };
 		E6DFF72217A4B51D0056F270 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6DFF72017A4B51D0056F270 /* InfoPlist.strings */; };
 		E6DFF72417A4B51D0056F270 /* ShootDuckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DFF72317A4B51D0056F270 /* ShootDuckTests.m */; };
-		E6DFF73217A4B8C10056F270 /* Duck.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E6DFF73117A4B8C10056F270 /* Duck.atlas */; };
 		E6DFF74117A4BD5A0056F270 /* SDDuck.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DFF74017A4BD5A0056F270 /* SDDuck.m */; };
 		E6DFF74417A4BE9C0056F270 /* SDShootDuckGame.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DFF74317A4BE9C0056F270 /* SDShootDuckGame.m */; };
+		E6DFF74817A4F0E50056F270 /* Duck.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E6DFF74717A4F0E50056F270 /* Duck.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E6C1D4C417FE788200FA02EF /* duck1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = duck1.png; path = Duck.atlas/duck1.png; sourceTree = "<group>"; };
+		E6C1D4C517FE788200FA02EF /* duck2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = duck2.png; path = Duck.atlas/duck2.png; sourceTree = "<group>"; };
 		E6DFF6EE17A4B51D0056F270 /* ShootDuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootDuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DFF6F117A4B51D0056F270 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E6DFF6F317A4B51D0056F270 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,18 +59,17 @@
 		E6DFF70917A4B51D0056F270 /* SDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDViewController.m; sourceTree = "<group>"; };
 		E6DFF70B17A4B51D0056F270 /* SDMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDMyScene.h; sourceTree = "<group>"; };
 		E6DFF70C17A4B51D0056F270 /* SDMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDMyScene.m; sourceTree = "<group>"; };
-		E6DFF70E17A4B51D0056F270 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		E6DFF71017A4B51D0056F270 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E6DFF71617A4B51D0056F270 /* ShootDuckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShootDuckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DFF71717A4B51D0056F270 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E6DFF71F17A4B51D0056F270 /* ShootDuckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShootDuckTests-Info.plist"; sourceTree = "<group>"; };
 		E6DFF72117A4B51D0056F270 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E6DFF72317A4B51D0056F270 /* ShootDuckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShootDuckTests.m; sourceTree = "<group>"; };
-		E6DFF73117A4B8C10056F270 /* Duck.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Duck.atlas; sourceTree = "<group>"; };
 		E6DFF73F17A4BD5A0056F270 /* SDDuck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDuck.h; sourceTree = "<group>"; };
 		E6DFF74017A4BD5A0056F270 /* SDDuck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDuck.m; sourceTree = "<group>"; };
 		E6DFF74217A4BE9C0056F270 /* SDShootDuckGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDShootDuckGame.h; sourceTree = "<group>"; };
 		E6DFF74317A4BE9C0056F270 /* SDShootDuckGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDShootDuckGame.m; sourceTree = "<group>"; };
+		E6DFF74717A4F0E50056F270 /* Duck.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Duck.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,9 @@
 		E6DFF6F917A4B51D0056F270 /* ShootDuck */ = {
 			isa = PBXGroup;
 			children = (
+				E6C1D4C417FE788200FA02EF /* duck1.png */,
+				E6C1D4C517FE788200FA02EF /* duck2.png */,
+				E6DFF74717A4F0E50056F270 /* Duck.atlas */,
 				E6DFF70217A4B51D0056F270 /* SDAppDelegate.h */,
 				E6DFF70317A4B51D0056F270 /* SDAppDelegate.m */,
 				E6DFF70517A4B51D0056F270 /* Main.storyboard */,
@@ -136,9 +141,7 @@
 				E6DFF70917A4B51D0056F270 /* SDViewController.m */,
 				E6DFF70B17A4B51D0056F270 /* SDMyScene.h */,
 				E6DFF70C17A4B51D0056F270 /* SDMyScene.m */,
-				E6DFF70E17A4B51D0056F270 /* Spaceship.png */,
 				E6DFF71017A4B51D0056F270 /* Images.xcassets */,
-				E6DFF73117A4B8C10056F270 /* Duck.atlas */,
 				E6DFF6FA17A4B51D0056F270 /* Supporting Files */,
 				E6DFF73F17A4BD5A0056F270 /* SDDuck.h */,
 				E6DFF74017A4BD5A0056F270 /* SDDuck.m */,
@@ -225,6 +228,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Teaualune Tseng";
 				TargetAttributes = {
+					E6DFF6ED17A4B51D0056F270 = {
+						DevelopmentTeam = T59TDK9D3N;
+					};
 					E6DFF71517A4B51D0056F270 = {
 						TestTargetID = E6DFF6ED17A4B51D0056F270;
 					};
@@ -254,11 +260,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6DFF73217A4B8C10056F270 /* Duck.atlas in Resources */,
+				E6DFF74817A4F0E50056F270 /* Duck.atlas in Resources */,
+				E6C1D4C717FE788200FA02EF /* duck2.png in Resources */,
 				E6DFF6FE17A4B51D0056F270 /* InfoPlist.strings in Resources */,
 				E6DFF71117A4B51D0056F270 /* Images.xcassets in Resources */,
-				E6DFF70F17A4B51D0056F270 /* Spaceship.png in Resources */,
 				E6DFF70717A4B51D0056F270 /* Main.storyboard in Resources */,
+				E6C1D4C617FE788200FA02EF /* duck1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,10 +412,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShootDuck/ShootDuck-Prefix.pch";
 				INFOPLIST_FILE = "ShootDuck/ShootDuck-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -419,10 +429,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShootDuck/ShootDuck-Prefix.pch";
 				INFOPLIST_FILE = "ShootDuck/ShootDuck-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -487,6 +500,7 @@
 				E6DFF72917A4B51D0056F270 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6DFF72A17A4B51D0056F270 /* Build configuration list for PBXNativeTarget "ShootDuckTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +509,7 @@
 				E6DFF72C17A4B51D0056F270 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

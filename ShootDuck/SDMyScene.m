@@ -44,23 +44,18 @@ typedef enum {
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
-        /* Setup your scene here */
 
         _state = begin;
-        
+
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
-        
         self.startLabel = [SKLabelNode labelNodeWithFontNamed:@"Helvetica"];
-        
         self.startLabel.text = @"Start";
         self.startLabel.fontSize = 30;
         self.startLabel.position = CGPointMake(CGRectGetMidX(self.frame),
                                        CGRectGetMidY(self.frame));
-        
         [self addChild:self.startLabel];
-        
-        _game = [[SDShootDuckGame alloc] init];
 
+        _game = [[SDShootDuckGame alloc] init];
         _timeLabel = [SKLabelNode labelNodeWithFontNamed:@"Helvetica"];
         _timeLabel.text = [NSString stringWithFormat:@"Time: %d", (NSInteger) _game.remainingTime];
         _timeLabel.fontSize = 16;
