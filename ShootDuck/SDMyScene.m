@@ -57,7 +57,7 @@ typedef enum {
 
         _game = [[SDShootDuckGame alloc] init];
         _timeLabel = [SKLabelNode labelNodeWithFontNamed:@"Helvetica"];
-        _timeLabel.text = [NSString stringWithFormat:@"Time: %d", (NSInteger) _game.remainingTime];
+        _timeLabel.text = [NSString stringWithFormat:@"Time: %ld", (long) _game.remainingTime];
         _timeLabel.fontSize = 16;
         _timeLabel.position = CGPointMake(30, 30);
         [self addChild:_timeLabel];
@@ -92,7 +92,7 @@ typedef enum {
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
     if (self.state == running) {
-        self.timeLabel.text = [NSString stringWithFormat:@"Time: %d", (NSInteger) self.game.remainingTime];
+        self.timeLabel.text = [NSString stringWithFormat:@"Time: %ld", (long) self.game.remainingTime];
 
         if (self.game.remainingTime < 0) {
             // game over
@@ -133,7 +133,7 @@ typedef enum {
         if ([duck containsPoint:location]) {
             // hit a duck!
             self.game.score += duck.score;
-            self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+            self.scoreLabel.text = [NSString stringWithFormat:@"Score: %ld", (long)self.game.score];
             [duck.spriteNode removeFromParent];
             [self.game.ducks removeObject:duck];
             break;

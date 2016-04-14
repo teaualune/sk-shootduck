@@ -228,9 +228,6 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Teaualune Tseng";
 				TargetAttributes = {
-					E6DFF6ED17A4B51D0056F270 = {
-						DevelopmentTeam = T59TDK9D3N;
-					};
 					E6DFF71517A4B51D0056F270 = {
 						TestTargetID = E6DFF6ED17A4B51D0056F270;
 					};
